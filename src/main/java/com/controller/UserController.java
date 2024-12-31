@@ -16,4 +16,10 @@ public class UserController {
         model.addAttribute("user", user);
         return "index";
     }
+
+    @GetMapping("/dashboard")
+    public String showDashboardPage(Model model) {
+        model.addAttribute("user", user);
+        return "dashboard";
+    }
 }
